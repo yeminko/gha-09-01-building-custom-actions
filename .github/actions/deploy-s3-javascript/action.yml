@@ -11,6 +11,10 @@ inputs:
   dist-folder:
     description: "The folder containing the website files to deploy"
     required: true
+outputs:
+  website-url: # Will inject from main.js
+    description: "The URL of the deployed website"
+
 runs:
   using: "node16"
   main: "main.js"
